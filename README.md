@@ -80,18 +80,6 @@ A aplicação estará disponível em http://localhost:5173.
 📁 Estrutura do Projeto
 A estrutura de pastas foi organizada para promover a escalabilidade e a separação de responsabilidades, facilitando a manutenção.
 
-src/
-├── assets/         # Imagens, fontes, etc.
-├── components/     # Componentes React (layout, ui)
-├── config/         # Configuração do Firebase
-├── contexts/       # Contextos React (Auth, Theme)
-├── hooks/          # Hooks customizados (useAuth, useTheme)
-├── pages/          # Componentes de página (rotas)
-├── services/       # Lógica de negócio (authService, firestoreService)
-├── types/          # Definições de tipos TypeScript
-├── App.tsx         # Componente principal com as rotas
-└── main.tsx        # Ponto de entrada da aplicação
-
 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
