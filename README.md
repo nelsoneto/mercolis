@@ -1,9 +1,11 @@
 Mercolis! 📝
 A sua lista de compras inteligente, simples e moderna.
 🚀 Sobre o Projeto
-Mercolis é uma aplicação web moderna, desenhada para simplificar a forma como você cria e gerencia as suas listas de compras. Chega de pedaços de papel perdidos ou apps complicados! Com uma interface limpa, modo escuro e sincronização em tempo real, o EzList torna as suas idas ao supermercado mais eficientes e organizadas.
+Mercolis é uma aplicação web moderna, desenhada para simplificar a forma como você cria e gerencia as suas listas de compras. Chega de pedaços de papel perdidos ou apps complicados! Com uma interface limpa, modo escuro e sincronização em tempo real, o Mercolis torna as suas idas ao supermercado mais eficientes e organizadas.
 
-Este projeto foi construído como um web app completo, utilizando as tecnologias mais recentes do ecossistema React para garantir uma experiência de usuário rápida, responsiva e agradável. Este é um projeto em andamento, com novas funcionalidades sendo adicionadas continuamente.
+Este projeto foi construído como um web app completo, utilizando as tecnologias mais recentes do ecossistema React para garantir uma experiência de usuário rápida, responsiva e agradável. 
+
+⚠️ Este é um projeto em andamento, com novas funcionalidades sendo adicionadas continuamente ⚠️
 
 ✨ Principais Funcionalidades
 🔒 Autenticação de Usuários: Sistema de login seguro com E-mail/Senha e provedor Google.
