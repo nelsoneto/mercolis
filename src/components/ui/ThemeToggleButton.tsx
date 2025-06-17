@@ -4,7 +4,8 @@ import { useTheme } from '../../contexts/ThemeContext';
 // Ícones SVG para Sol (light) e Lua (dark)
 const SunIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m8.66-14.66l-.707.707M4.04 19.96l-.707.707M21 12h-1M4 12H3m15.66 2.66l-.707-.707M5.04 5.04l-.707-.707" />
+    <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth={2} fill="none" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 1v2m0 18v2m11-9h-2M3 12H1m16.95-7.07l-1.41 1.41M6.05 19.07l-1.41-1.41M19.07 19.07l-1.41-1.41M6.05 4.93l-1.41 1.41" />
   </svg>
 );
 

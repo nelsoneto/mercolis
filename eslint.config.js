@@ -8,8 +8,10 @@ import tailwindcss from 'eslint-plugin-tailwindcss'; // 1. Adicione esta importa
 export default tseslint.config(
   { ignores: ['dist'] },
   
-  // Tailwind
+  // 2. Adicione a configuração recomendada do Tailwind aqui
   ...tailwindcss.configs['flat/recommended'], 
+  
+  // Sua configuração existente
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
@@ -27,7 +29,7 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
-      // Regras do Tailwind aqui
+      // Você pode opcionalmente ajustar as regras do Tailwind aqui
       'tailwindcss/no-custom-classname': 'off', 
     },
   },

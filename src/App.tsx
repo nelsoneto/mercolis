@@ -1,21 +1,14 @@
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/Home.tsx';
-import LoginPage from './pages/Login.tsx';
-import ProtectedRoute from './components/auth/ProtectedRoute.tsx'; // Importamos o "segurança"
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/Home.tsx'
+import LoginPage from './pages/Login.tsx'
+import ListDetailsPage from './pages/ListDetails' // Importar a nova página
+import ProtectedRoute from './components/auth/ProtectedRoute.tsx'
 
 function App() {
   return (
     <Routes>
-      {/* ROTA PÚBLICA: /login
-        Qualquer um pode acessar a página de login.
-        Não precisa de proteção.
-      */}
       <Route path="/login" element={<LoginPage />} />
 
-      {/* ROTA PRIVADA: /
-        Apenas usuários logados podem acessar a página inicial.
-        Envolvemos a <HomePage /> com o nosso <ProtectedRoute>.
-      */}
       <Route
         path="/"
         element={
@@ -25,18 +18,17 @@ function App() {
         }
       />
 
-      {/* Para outras rotas protegidas, o padrão é o mesmo. Ex:
-        <Route
-          path="/profile"
-          element={
-            <ProtectedRoute>
-              <ProfilePage />
-            </ProtectedRoute>
-          }
-        /> 
-      */}
+      {/* ROTA NOVA PARA OS DETALHES DA LISTA */}
+      <Route
+        path="/list/:listId" // O caminho com o parâmetro dinâmico
+        element={
+          <ProtectedRoute>
+            <ListDetailsPage />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
-  );
+  )
 }
 
-export default App;
+export default App
