@@ -79,15 +79,15 @@ const ListDetailsPage: React.FC = () => {
   }
 
   return (
-    <div className="bg-background text-foreground min-h-screen">
+    <div className="min-h-screen dark:bg-neutral-800 dark:text-neutral-100">
       {/* Header simples com o nome da lista */}
-      <header className="border-border bg-surface border-b p-4 shadow-sm">
+      <header className="border-border bg-surface p-4 shadow-sm dark:shadow-neutral-700">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
-          <Link to="/" className="text-primary text-sm hover:underline">
-            &larr; Voltar
+          <Link to="/" className="text-primary hover: text-sm font-semibold underline-offset-4 hover:underline">
+            <span>&larr;</span> Voltar
           </Link>
           <h1 className="text-2xl font-bold">{list.name}</h1>
-          <div /> {/* Espaçador */}
+          <div />
         </div>
       </header>
 
@@ -100,12 +100,12 @@ const ListDetailsPage: React.FC = () => {
             value={newItemName}
             onChange={(e) => setNewItemName(e.target.value)}
             placeholder="Adicionar novo item (ex: Leite)"
-            className="border-border bg-background text-foreground focus:ring-primary grow rounded-md border p-3 focus:outline-none focus:ring-2"
+            className="border-border focus:ring-primary grow rounded-md  bg-neutral-100 p-3 focus:outline-none focus:ring-2 dark:bg-neutral-700 dark:text-neutral-100"
             required
           />
           <button
             type="submit"
-            className="bg-primary rounded-md px-6 py-3 font-semibold text-white hover:opacity-90"
+            className="rounded-md bg-green-400 px-6 py-3 font-semibold hover:bg-green-500 dark:text-neutral-100"
           >
             Adicionar
           </button>
@@ -117,14 +117,14 @@ const ListDetailsPage: React.FC = () => {
             list.items.map((item) => (
               <div
                 key={item.id}
-                className="bg-surface flex items-center justify-between rounded-lg p-4 shadow-sm"
+                className="flex items-center justify-between rounded-lg bg-neutral-200 p-4 shadow-sm dark:bg-neutral-700"
               >
                 <div className="flex items-center">
                   <input
                     type="checkbox"
                     checked={item.checked}
                     onChange={() => handleToggleItem(item.id)}
-                    className="border-border text-primary focus:ring-primary size-6 rounded"
+                    className="border-border focus:ring-primary size-6 rounded text-neutral-800"
                     title={`Marcar ${item.name} como ${item.checked ? 'não comprado' : 'comprado'}`}
                   />
 
@@ -139,7 +139,7 @@ const ListDetailsPage: React.FC = () => {
                   onClick={() => handleDeleteItem(item.id)}
                   className="text-red-500 hover:text-red-700"
                 >
-                  {/* Ícone de Lixo */}
+                  {/* Lixeira */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="size-5"

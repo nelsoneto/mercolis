@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-neutral-100 text-neutral-800 transition-colors duration-300 dark:bg-neutral-800 dark:text-neutral-200">
-      <header className="border-border border-b bg-neutral-100 shadow-sm dark:border-neutral-400 dark:bg-neutral-800">
+      <header className="border-border  bg-neutral-100 shadow-sm dark:border-neutral-400 dark:bg-neutral-800 dark:shadow-neutral-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <h1 className="text-foreground text-xl font-bold">Mercolis</h1>
@@ -67,7 +67,7 @@ const HomePage: React.FC = () => {
               <ThemeToggleButton />
               <button
                 onClick={handleLogout}
-                className="rounded-md bg-red-600 px-3 py-2 text-sm font-medium text-white hover:bg-red-700"
+                className="rounded-md bg-red-600 px-5 py-3 text-sm font-medium text-white hover:bg-red-700"
               >
                 Sair
               </button>
@@ -78,7 +78,7 @@ const HomePage: React.FC = () => {
 
       <main className="py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="border-border rounded-lg border bg-neutral-100 p-8 shadow dark:border-neutral-400 dark:bg-neutral-400 dark:text-neutral-800">
+          <div className="border-border rounded-lg  bg-neutral-100 p-8 shadow  dark:bg-neutral-300 dark:text-neutral-800">
             <div className="mb-8 flex items-center justify-between">
               <div>
                 <h2 className="text-foreground text-2xl font-semibold">
@@ -104,14 +104,41 @@ const HomePage: React.FC = () => {
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {lists.map((list) => (
                   <Link key={list.id} to={`/list/${list.id}`}>
-                    <div className="border-border bg-background hover:border-primary cursor-pointer rounded-lg border p-4 shadow-sm transition-all hover:shadow-md">
+                    <div className="border-border hover:border-primary cursor-pointer rounded-lg bg-neutral-200 p-4 shadow-sm transition-all hover:shadow-md">
                       <h3 className="text-foreground font-bold">{list.name}</h3>
                       <p className="text-secondary-text text-sm">
                         {list.items.length} itens
                       </p>
+                      {/* pré-visualização dos itens na lista */}
+                      <div className="border-border border-t pt-2">
+                        {list.items.length > 0 ? (
+                          <ul className="space-y-1">
+                            {/* Pegar apenas os 3 primeiros itens */}
+                            {list.items.slice(0, 3).map((item) => (
+                              <li
+                                key={item.id}
+                                className={`text-secondary-text text-sm ${item.checked ? 'line-through' : ''
+                                  }`}
+                              >
+                                - {item.name}
+                              </li>
+                            ))}
+                            {/* Se houver mais de 3 itens, mostrar mensagem */}
+                            {list.items.length > 3 && (
+                              <li className="text-secondary-text text-xs italic">
+                                ... e mais {list.items.length - 3}
+                              </li>
+                            )}
+                          </ul>
+                        ) : (
+                          <p className="text-secondary-text text-sm italic">
+                            Lista vazia
+                          </p>
+                        )}
+                      </div>
                       <p className="text-secondary-text mt-2 text-xs">
                         Criada em:{' '}
-                        {/* AQUI ESTÁ A CORREÇÃO: */}
+
                         {list.createdAt.toLocaleDateString('pt-BR')}
                       </p>
                     </div>
@@ -147,13 +174,13 @@ const HomePage: React.FC = () => {
             <button
               type="button"
               onClick={() => setIsModalOpen(false)}
-              className="text-secondary-text mr-2 rounded-md bg-transparent px-4 py-2 hover:bg-neutral-200 dark:hover:bg-neutral-800"
+              className="hover:bg-red-600s mr-2 rounded-md bg-red-400 px-4 py-2 font-semibold text-neutral-100 hover:bg-red-500"
             >
               Cancelar
             </button>
             <button
               type="submit"
-              className="bg-primary rounded-lg px-4 py-2 font-semibold text-white shadow-md hover:opacity-90"
+              className="rounded-lg bg-green-400 px-4 py-2 font-semibold text-neutral-100 shadow-md hover:bg-green-500"
             >
               Criar
             </button>

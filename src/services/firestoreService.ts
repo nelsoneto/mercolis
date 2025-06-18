@@ -23,20 +23,18 @@ const listsCollectionRef = collection(db, 'shoppingLists')
 import { DocumentSnapshot } from 'firebase/firestore'
 
 const processDoc = (doc: DocumentSnapshot): ShoppingList => {
-  // Usamos destructuring para separar o createdAt do resto dos dados.
+  // Usa destructuring para separar o createdAt do resto dos dados.
   const { createdAt, ...restOfData } = doc.data() ?? {}
 
   return {
     id: doc.id,
-    // Agora o nosso createdAt convertido nunca será sobrescrito.
+    // Agora createdAt convertido nunca será sobrescrito.
     createdAt: createdAt instanceof Timestamp ? createdAt.toDate() : new Date(),
     ...restOfData,
   } as ShoppingList
 }
 
-/**
- * Cria uma nova lista de compras no Firestore.
- */
+/** Cria uma nova lista de compras no Firestore. **/
 export const createShoppingList = (listName: string, userId: string) => {
   if (!listName.trim()) {
     return Promise.reject(new Error('O nome da lista não pode estar vazio.'))
@@ -49,9 +47,7 @@ export const createShoppingList = (listName: string, userId: string) => {
   })
 }
 
-/**
- * Ouve as listas de compras de um utilizador em tempo real.
- */
+/** Ouve as listas de compras de um utilizador em tempo real. **/
 export const listenToUserLists = (
   userId: string,
   callback: (lists: ShoppingList[]) => void,
@@ -77,9 +73,7 @@ export const listenToUserLists = (
   return unsubscribe
 }
 
-/**
- * Ouve os detalhes de uma única lista em tempo real.
- */
+/** Ouve os detalhes de uma única lista em tempo real. **/
 export const listenToListDetails = (
   listId: string,
   callback: (list: ShoppingList | null) => void,
@@ -102,9 +96,7 @@ export const listenToListDetails = (
   return unsubscribe
 }
 
-/**
- * Atualiza o array de itens de uma lista de compras.
- */
+/** Atualiza o array de itens de uma lista de compras. */
 export const updateShoppingListItems = (
   listId: string,
   items: ShoppingListItem[],
