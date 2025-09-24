@@ -73,13 +73,15 @@ VITE_STORAGE_BUCKET="seu-projeto.appspot.com"
 VITE_MESSAGING_SENDER_ID="..."
 VITE_APP_ID="1:..."
 ```
+---
+
 ## 🛣️ Roadmap
-**[x] Autenticação com Google
-**[x] Modo escuro com persistência
-**[x] CRUD de listas
-**[ ] Compartilhamento de listas com outros usuários
-**[ ] Notificações push
-**[ ] Histórico de compras
+- **[x] Autenticação com Google
+- **[x] Modo escuro com persistência
+- **[x] CRUD de listas
+- **[ ] Compartilhamento de listas com outros usuários
+- **[ ] Notificações push
+- **[ ] Histórico de compras
 
 ### 🤝 Contribuindo
 Contribuições são super bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias.
