@@ -83,4 +83,4 @@ A estrutura de pastas foi organizada para promover a escalabilidade e a separaç
 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Feito com ❤️ por Nelson.
+Feito por Nelson.
