@@ -1,87 +1,86 @@
 # Mercolis! 📝  
-A sua lista de compras inteligente, simples e moderna.
+Your smart, simple, and modern shopping list.
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-blue?logo=tailwindcss)
 ![Firebase](https://img.shields.io/badge/Firebase-9.0-orange?logo=firebase)
 ![MIT License](https://img.shields.io/badge/License-MIT-green)
-[![Deploy](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://nelson-portifolio.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-black?logo=vercel)](https://nelson-portifolio.vercel.app/)
 
 ---
 
-## 🚀 Sobre o Projeto
+## 🚀 About the Project
 
-**Mercolis** é uma aplicação web moderna, desenhada para simplificar a forma como você cria e gerencia suas listas de compras. Chega de pedaços de papel perdidos ou apps complicados! Com uma interface limpa, modo escuro e sincronização em tempo real, o Mercolis torna suas idas ao supermercado mais eficientes e organizadas.
+**Mercolis** is a modern web application designed to simplify how you create and manage your shopping lists. Say goodbye to lost paper scraps and overly complicated apps! With a clean interface, dark mode, and real-time sync, Mercolis makes your grocery runs more efficient and organized.
 
-> ⚠️ Este é um projeto em andamento, com novas funcionalidades sendo adicionadas continuamente.
-
----
-
-## ✨ Principais Funcionalidades
-
-- 🔒 **Autenticação de Usuários**: Login seguro com E-mail/Senha e Google.
-- ➕ **Gerenciamento de Listas**: Crie, edite e delete múltiplas listas.
-- ✔️ **Itens Interativos**: Marque itens como comprados com atualização em tempo real.
-- 🌙 **Modo Escuro**: Tema claro/escuro com persistência da preferência.
-- 📱 **Design Responsivo**: Funciona perfeitamente em desktop, tablet e smartphone.
-- 🔥 **Real-time Database**: Sincronização instantânea via Firebase Firestore.
+> ⚠️ This is an ongoing project, with new features being added regularly.
 
 ---
 
-## 📸 Demonstração
+## ✨ Key Features
+
+- 🔒 **User Authentication**: Secure login with Email/Password and Google provider.
+- ➕ **List Management**: Create, edit, and delete multiple shopping lists.
+- ✔️ **Interactive Items**: Add items, mark them as purchased, and see real-time updates.
+- 🌙 **Dark Mode**: Light and dark themes with persistent user preference.
+- 📱 **Responsive Design**: Fully optimized for desktops, tablets, and smartphones.
+- 🔥 **Real-time Database**: Instant updates across devices using Firebase Firestore.
+
+---
+
+## 📸 Demo
 
 <img width="1287" height="988" alt="image" src="https://github.com/user-attachments/assets/b36e4378-ec26-4a40-87b9-5a289440b082" />
 <img width="1287" height="996" alt="image" src="https://github.com/user-attachments/assets/a0085961-6ba5-4aa3-adb2-4a531ec94e08" />
 
 ---
 
-## 🛠️ Stack de Tecnologias
+## 🛠️ Tech Stack
 
 - **Frontend**: React.js & TypeScript  
 - **Build Tool**: Vite.js  
-- **Estilização**: Tailwind CSS  
+- **Styling**: Tailwind CSS  
 - **Backend & Database**: Firebase (Authentication & Firestore)  
-- **Roteamento**: React Router DOM  
-- **Gerenciamento de Estado**: React Context API  
+- **Routing**: React Router DOM  
+- **State Management**: React Context API  
 - **Linting**: ESLint  
 
 ---
 
-## ⚙️ Como Começar
+## ⚙️ Getting Started
 
-### Pré-requisitos
+### Prerequisites
 
-- Node.js (versão 18 ou superior)
-- Conta no Firebase
+- Node.js (version 18 or higher)
+- A Firebase account
 
-### Instalação
+### Installation
 
 ```bash
 git clone https://github.com/nelsoneto/mercolis.git
 cd mercolis
 npm install
 ```
-## Configuração
+## Configuration
 
-Crie um arquivo .env na raiz do projeto com as credenciais do Firebase:
+Create a .env file at the root of the project and add your Firebase credentials:
 ```.env
 VITE_API_KEY="AIza..."
-VITE_AUTH_DOMAIN="seu-projeto.firebaseapp.com"
-VITE_PROJECT_ID="seu-projeto"
-VITE_STORAGE_BUCKET="seu-projeto.appspot.com"
+VITE_AUTH_DOMAIN="your-project.firebaseapp.com"
+VITE_PROJECT_ID="your-project"
+VITE_STORAGE_BUCKET="your-project.appspot.com"
 VITE_MESSAGING_SENDER_ID="..."
 VITE_APP_ID="1:..."
 ```
----
 
 ## 🛣️ Roadmap
-- [x] Autenticação com Google
-- [x] Modo escuro com persistência
-- [x] CRUD de listas
-- [ ] Compartilhamento de listas com outros usuários
-- [ ] Notificações push
-- [ ] Histórico de compras
+[x] Google Authentication
+[x] Dark mode with persistence
+[x] List CRUD operations
+[ ] Share lists with other users
+[ ] Push notifications
+[ ] Purchase history tracking
 
-### 🤝 Contribuindo
-Contribuições são super bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias.
+## 🤝 Contributing
+Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements.
