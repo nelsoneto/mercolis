@@ -61,4 +61,25 @@ A sua lista de compras inteligente, simples e moderna.
 git clone https://github.com/nelsoneto/mercolis.git
 cd mercolis
 npm install
+```
+## Configuração
 
+Crie um arquivo .env na raiz do projeto com as credenciais do Firebase:
+```.env
+VITE_API_KEY="AIza..."
+VITE_AUTH_DOMAIN="seu-projeto.firebaseapp.com"
+VITE_PROJECT_ID="seu-projeto"
+VITE_STORAGE_BUCKET="seu-projeto.appspot.com"
+VITE_MESSAGING_SENDER_ID="..."
+VITE_APP_ID="1:..."
+```
+##🛣️ Roadmap
+[x] Autenticação com Google
+[x] Modo escuro com persistência
+[x] CRUD de listas
+[ ] Compartilhamento de listas com outros usuários
+[ ] Notificações push
+[ ] Histórico de compras
+
+###🤝 Contribuindo
+Contribuições são super bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias.
