@@ -31,7 +31,8 @@ A sua lista de compras inteligente, simples e moderna.
 
 ## 📸 Demonstração
 
-> *(Adicione aqui um GIF ou imagem do app rodando. Posso te ajudar a gerar um se quiser!)*
+<img width="1287" height="988" alt="image" src="https://github.com/user-attachments/assets/b36e4378-ec26-4a40-87b9-5a289440b082" />
+<img width="1287" height="996" alt="image" src="https://github.com/user-attachments/assets/a0085961-6ba5-4aa3-adb2-4a531ec94e08" />
 
 ---
 
@@ -60,13 +61,4 @@ A sua lista de compras inteligente, simples e moderna.
 git clone https://github.com/nelsoneto/mercolis.git
 cd mercolis
 npm install
-
-Crie um arquivo .env na raiz do projeto com as credenciais do Firebase:
-
-VITE_API_KEY="AIza..."
-VITE_AUTH_DOMAIN="seu-projeto.firebaseapp.com"
-VITE_PROJECT_ID="seu-projeto"
-VITE_STORAGE_BUCKET="seu-projeto.appspot.com"
-VITE_MESSAGING_SENDER_ID="..."
-VITE_APP_ID="1:..."
 
