@@ -73,7 +73,7 @@ VITE_STORAGE_BUCKET="seu-projeto.appspot.com"
 VITE_MESSAGING_SENDER_ID="..."
 VITE_APP_ID="1:..."
 ```
-##🛣️ Roadmap
+🛣️ Roadmap
 [x] Autenticação com Google
 [x] Modo escuro com persistência
 [x] CRUD de listas
