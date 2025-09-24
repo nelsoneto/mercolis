@@ -75,12 +75,12 @@ VITE_APP_ID="1:..."
 ```
 
 ## 🛣️ Roadmap
-[x] Google Authentication
-[x] Dark mode with persistence
-[x] List CRUD operations
-[ ] Share lists with other users
-[ ] Push notifications
-[ ] Purchase history tracking
+- [x] Google Authentication
+- [x] Dark mode with persistence
+- [x] List CRUD operations
+- [ ] Share lists with other users
+- [ ] Push notifications
+- [ ] Purchase history tracking
 
 ## 🤝 Contributing
 Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements.
