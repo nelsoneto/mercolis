@@ -14,6 +14,8 @@ Your smart, simple, and modern shopping list.
 
 Honestly, the idea of creating **Mercolis** came to mind every time my wife and I needed to write our shopping list. We would either forget something, lose the note, or end up texting each other random items. So I thought, why not create something that would really solve this problem for us and maybe for other people too?
 
+Mercolis is a modern web app that helps you create and manage your shopping lists in a super simple way. With a clean interface, dark mode, and real-time sync, Mercolis makes grocery shopping way more practical.
+
 > ⚠️ This is an ongoing project, with new features being added regularly.
 
 ---
